@@ -21,8 +21,8 @@ public class Products {
            String status = (this.sold < 1) ? "Out-of-Stock" : "Available";
            double tep = this.stock * this.price;
            
-                 
-           System.out.printf("%-10d %-10s %-10d %-10d %-10.2f %-10.2f %-10s %-10.2f\n",
+           System.out.println("\n");      
+           System.out.printf("%-10d %-10s %-10d %-10d %-10.2f %-10.2f %-12s %-10.2f\n",
                            this.id, this.name, this.sold, this.stock, this.price, profit, status, tep);
        }
 }
