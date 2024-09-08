@@ -36,7 +36,7 @@ public class netPayAct {
         System.out.println("          SLIP DETAILS            ");
         System.out.println("----------------------------------");
         
-        System.out.println("Date: August 14, 2024");
+        System.out.println("Date: September 10, 2024");
         System.out.println ("Name: " + name);
         System.out.println("Age: " + age);
         

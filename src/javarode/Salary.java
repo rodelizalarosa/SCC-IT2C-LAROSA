@@ -47,15 +47,16 @@ public class Salary {
         }
         
         System.out.println("\n");
-        System.out.printf("%-10s  %-10s  %-10s  %-10s  %-10s  %-10s  %-10s \n", "ID", "Name", "Rate", "Hours", "Gross", "Deductions", "Net Pay");
+        System.out.printf("%-8s  %-10s  %-10s  %-10s  %-10s  %-12s  %-10s\n", "ID", "Name", "Rate", "Hours", "Gross", "Deductions", "Net Pay");
+
         
         for (i = 0; i < nums; i++){
             
             slr[i].viewSalary();        
         }
         
-        System.out.printf("\nTotal Salary for Request: ", sRel);
-        System.out.printf("\nTotal Deductions: ", tDeduc);
-        System.out.printf("\nTotal Salary to Release: ", (sRel - tDeduc));
+        System.out.printf("\nTotal Salary for Request: %.2f ", sRel);
+        System.out.printf("\nTotal Deductions: %.2f ", tDeduc);
+        System.out.printf("\nTotal Salary to Release: %.2f ", (sRel - tDeduc));
     }
 }

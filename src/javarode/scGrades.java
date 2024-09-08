@@ -15,7 +15,7 @@ public class scGrades {
         double p, m, pf, f;
   
         
-        System.out.print("Enter no. of Students: ");
+        System.out.println("Enter no. of Students: ");
         nums = sc.nextInt();
         
         for (i = 0; i < nums; i++){

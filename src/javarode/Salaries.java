@@ -18,7 +18,7 @@ public class Salaries {
         this.deduc = deduction;
         
         this.gross = r*hrs;
-        this.netP = ((rate * hrs) - deduc);
+        this.netP = ((r * hrs) - deduc);
     
     }
     
