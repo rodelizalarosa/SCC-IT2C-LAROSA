@@ -24,7 +24,7 @@ public class Grades {
         
         
         
-        System.out.printf("\n%-10d %-10s %-10.2f %-10.2f %-10.2f %-10.2f %-10.2f %-10s\n",
+        System.out.printf("%-10d %-15s %-10.2f %-10.2f %-10.2f %-10.2f %-10.2f %-10s\n",
                            this.id, this.name, this.pr, this.m, this.p, this.f, avg, remarks );
         
         

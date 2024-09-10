@@ -15,7 +15,7 @@ public class scGrades {
         double p, m, pf, f;
   
         
-        System.out.println("Enter no. of Students: ");
+        System.out.print("\nEnter no. of Students: ");
         nums = sc.nextInt();
         
         for (i = 0; i < nums; i++){
@@ -44,6 +44,9 @@ public class scGrades {
             gr[i] = new Grades();
             gr[i].addGrades(sid, name, p, m, pf, f);
         }
+        
+        System.out.print("\n");
+        System.out.printf("%-10s %-15s %-10s %-10s %-10s %-10s %-10s %-10s\n", "ID", "NAME", "PRELIM", "MIDTERM", "PREFINAL", "FINALS", "AVERAGE", "REMARKS");
         
         for (i = 0; i < nums; i++){
             

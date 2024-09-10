@@ -10,6 +10,7 @@ public class Accounts {
         
         this.id = aId;
         this.fName = fname;
+        this.lName = lname;
         this.email = em;
         this.username = user;
         this.password = pass;
@@ -18,6 +19,6 @@ public class Accounts {
     
     public void viewAccount(){
         
-        System.out.println("");
+        System.out.printf(" %-10d  %-10s  %-10s  %-30s  %-10s  %-15s  \n", this.id, this.fName, this.lName, this.email, this.username, this.password );
     }
 }

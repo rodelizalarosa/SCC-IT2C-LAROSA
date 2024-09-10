@@ -13,7 +13,7 @@ public class netPayAct {
         int age, rate, hrs, deduc;
         float gross,netP;
         
-        System.out.print("Enter your name: ");
+        System.out.print("\nEnter your name: ");
         name = input.nextLine();
         
         System.out.print("Enter Age: ");

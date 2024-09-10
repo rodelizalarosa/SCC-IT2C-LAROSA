@@ -12,10 +12,10 @@ public class Salary {
         String name;
         int nums, sid, i;
         int rate, hrs, deduc;
-        double sRel = 0, tDeduc = 0;
+        double sReq = 0, tDeduc = 0;
   
         
-        System.out.print("Enter the no. of Employees: ");
+        System.out.print("\nEnter the no. of Employees: ");
         nums = sc.nextInt();
         
         for (i = 0; i < nums; i++){
@@ -42,7 +42,7 @@ public class Salary {
             slr[i] = new Salaries();
             slr[i].addSalary(sid, name, rate, hrs, deduc);
             
-            sRel += (rate * hrs);
+            sReq += (rate * hrs);
             tDeduc += (deduc);
         }
         
@@ -55,8 +55,8 @@ public class Salary {
             slr[i].viewSalary();        
         }
         
-        System.out.printf("\nTotal Salary for Request: %.2f ", sRel);
+        System.out.printf("\nTotal Salary for Request: %.2f ", sReq);
         System.out.printf("\nTotal Deductions: %.2f ", tDeduc);
-        System.out.printf("\nTotal Salary to Release: %.2f ", (sRel - tDeduc));
+        System.out.printf("\nTotal Salary to Release: %.2f ", (sReq - tDeduc));
     }
 }

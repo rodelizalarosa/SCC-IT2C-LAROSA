@@ -7,7 +7,7 @@ public class Salaries {
     int id;
     String name;
     int r, hrs, deduc;
-    double gross, netP, sRel = 0;
+    double gross, netP;
     
     public void addSalary (int sid, String name, int rate, int hours, int deduction) {
     

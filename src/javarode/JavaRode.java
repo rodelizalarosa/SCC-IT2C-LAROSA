@@ -9,6 +9,9 @@ public class JavaRode {
        
         
         Scanner sc = new Scanner(System.in);
+        String ch;
+        
+        do {
         
         System.out.println("\n--------------------");
         System.out.println("        MENU        ");
@@ -17,6 +20,12 @@ public class JavaRode {
         System.out.println("\n 1. Grade \n 2. Net Pay \n 3. Salaries \n 4. Products \n 5. Accounts");
         System.out.print("\nEnter action: ");
         int action = sc.nextInt();
+        
+               
+        while (action > 5){
+            System.out.print("\tInvalid action. Try again: ");
+            action = sc.nextInt();
+        }
         
         switch (action){
             case 1: 
@@ -32,15 +41,30 @@ public class JavaRode {
                 sal.salaries(); 
                 break;
             case 4: 
-                Products pr = new Products();
-                pr.addProduct (10011, "Soap", 30, 30, 20.00 );
-                pr.viewProduct();
+                Product pr = new Product();
+                pr.inputProduct();
                 break;
             case 5:
-                
-                
-                
+                Account ac = new Account();
+                ac.inputAccount();
+                break;
         }
+                System.out.print("\n\nDo you want to use other system? (Y/N): ");
+                ch=sc.next();
+                
+//                if(ch.equals("N") || ch.equals("n")){
+//                    System.out.println("\f");
+//                }
+         
+        } while(ch.equals("Y") || ch.equals("y"));
+            
+            System.out.println("\nThank you for using JavaRode!");
+
+
+//           
+//                
+                
+//        }
     //       netPayAct npa = new netPayAct();
     //       npa.getPay();
         
