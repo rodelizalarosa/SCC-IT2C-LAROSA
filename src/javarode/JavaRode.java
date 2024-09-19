@@ -11,7 +11,7 @@ public class JavaRode {
         Scanner sc = new Scanner(System.in);
         String ch;
         
-       // do {
+        do {
         
         System.out.println("\n--------------------");
         System.out.println("        MENU        ");
@@ -49,16 +49,16 @@ public class JavaRode {
                 ac.inputAccount();
                 break;
         }
-//                System.out.print("\n\nDo you want to use other system? (Y/N): ");
-//                ch=sc.next();
-//                
-//                if(ch.equals("N") || ch.equals("n")){
-//                    System.out.println("\f");
-//                }
+                System.out.print("\n\nDo you want to use other system? (Y/N): ");
+                ch=sc.next();
+                
+                if(ch.equals("N") || ch.equals("n")){
+                    System.out.println("\f");
+                }
          
-//        } while(ch.equals("Y") || ch.equals("y"));
-//            
-//            System.out.println("\nThank you for using JavaRode!");
+        } while(ch.equals("Y") || ch.equals("y"));
+            
+            System.out.println("\nThank you for using JavaRode!");
 
 
 //           
